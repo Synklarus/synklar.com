@@ -5,22 +5,20 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <meta name="color-scheme" content="light only"/>
-        <meta name="description" content="Synklar.com"/>
+        <meta name="description" content="Alistair Synklar"/>
         <meta property="og:site_name" content="Alistair Synklar"/>
         <meta property="og:title" content="Alistair Synklar"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:description" content="Synklar.com"/>
-        <meta property="og:image" content="https://synklar.carrd.co/assets/images/card.jpg?v=3aadc59f"/>
+        <meta property="og:description" content="Alistair Synklar"/>
         <meta property="og:image:type" content="image/jpeg"/>
         <meta property="og:image:width" content="1280"/>
         <meta property="og:image:height" content="800"/>
-        <meta property="og:url" content="https://synklar.carrd.co"/>
+        <meta property="og:url" content="https://synklar.com"/>
         <meta property="twitter:card" content="summary_large_image"/>
-        <meta name="theme-color" content="#BD93F9"/>
-        <link rel="canonical" href="https://synklar.carrd.co"/>
-        <link href="https://fonts.googleapis.com/css2?display=swap&family=Tiro+Gurmukhi:ital,wght@0,400;1,400" rel="stylesheet" type="text/css"/>
-		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-        <style>
+        <link rel="canonical" href="https://synklar.com"/>
+        <link href="https://fonts.googleapis.com/css2?display=swap&family=Geist:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<style>
             html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
                 margin: 0;
                 padding: 0;
@@ -77,12 +75,6 @@
                 appearance: none
             }
 
-            @media (prefers-reduced-motion) {
-                *, *:before, *:after {
-                    transform: none !important;
-                }
-            }
-
             *, *:before, *:after {
                 box-sizing: border-box;
             }
@@ -107,7 +99,7 @@
                 transform: scale(1);
                 width: 100vw;
                 z-index: 0;
-                background-image: linear-gradient(to top, rgba(6,8,15,0.788), rgba(6,8,15,0.788)), url('assets/images/bg.jpg?v=3aadc59f');
+                background-image: linear-gradient(to top, rgba(6,8,15,0.788), rgba(6,8,15,0.788)), url('assets/images/bg.jpg?v=68640765');
                 background-position: 0% 0%, center;
                 background-repeat: repeat, repeat;
                 background-size: auto, cover;
@@ -191,7 +183,7 @@
             a {
                 color: inherit;
                 text-decoration: underline;
-                transition: none;
+                transition: color 0.25s ease;
             }
 
             a[onclick]:not([href]) {
@@ -234,7 +226,6 @@
                 position: relative;
                 text-align: var(--alignment);
                 z-index: 1;
-                transition: opacity 1s ease 0s,transform 1s ease 0s;
             }
 
             #main > .inner {
@@ -289,47 +280,6 @@
                 left: 50%;
                 margin-left: -50vw;
                 right: auto;
-            }
-
-            body.is-loading #main {
-                opacity: 0;
-                transform: scale(0.94375);
-            }
-
-            body #loader {
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                content: '';
-                display: block;
-                height: 4.5rem;
-                left: calc(50% - 2.25rem);
-                opacity: 0;
-                pointer-events: none;
-                position: fixed;
-                top: calc(50% - 2.25rem);
-                transition: opacity 1s ease, visibility 1s;
-                visibility: hidden;
-                width: 4.5rem;
-                z-index: 100000;
-            }
-
-            body.with-loader #loader {
-                background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTZweCIgaGVpZ2h0PSI5NnB4IiB2aWV3Qm94PSIwIDAgOTYgOTYiIHpvb21BbmRQYW49ImRpc2FibGUiPjxzdHlsZT5jaXJjbGUge2ZpbGw6IHRyYW5zcGFyZW50O3N0cm9rZS13aWR0aDogNnB4O3N0cm9rZTogIzA2MDgwRjt9PC9zdHlsZT48ZGVmcz48Y2xpcFBhdGggaWQ9ImNvcm5lciI+PHBvbHlnb24gcG9pbnRzPSI0OCwwIDk2LDAgOTYsNDggNDgsNDgiIC8+PC9jbGlwUGF0aD48L2RlZnM+PGNpcmNsZSBjeD0iNDgiIGN5PSI0OCIgcj0iMzIiIG9wYWNpdHk9IjAuMzc1IiAvPjxnIGNsaXAtcGF0aD0idXJsKCNjb3JuZXIpIj48Y2lyY2xlIGN4PSI0OCIgY3k9IjQ4IiByPSIzMiIgLz48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIGF0dHJpYnV0ZVR5cGU9IlhNTCIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDQ4IDQ4IiB0bz0iMzYwIDQ4IDQ4IiBkdXI9IjFzIiByZXBlYXREdXI9ImluZGVmaW5pdGUiIC8+PC9nPjwvc3ZnPg==');
-                opacity: 1;
-                transform: scale(1.0);
-                visibility: visible;
-            }
-
-            body.is-loading {
-                pointer-events: none;
-            }
-
-            body.is-playing.with-loader #loader {
-                opacity: 0;
-                transform: scale(0.5);
-                transition: opacity 0.25s ease, transform 0.75s ease, visibility 0.25s;
-                visibility: hidden;
             }
 
             body.is-instant #main, body.is-instant #main > .inner > *,body.is-instant #main > .inner > section > * {
@@ -397,12 +347,8 @@
                 border-width: 1px;
             }
 
-            #container02:not(:last-child) {
-                margin-bottom: 0rem !important;
-            }
-
             #container02 > .wrapper > .inner {
-                --gutters: calc(var(--padding-horizontal) * 2);
+                --gutters: 2rem;
                 --padding-horizontal: 0.5rem;
                 --padding-vertical: 0.5rem;
                 padding: var(--padding-vertical) var(--padding-horizontal);
@@ -524,7 +470,7 @@
                 width: 100%;
             }
 
-            #container07 {
+            #container01 {
                 display: flex;
                 width: 100%;
                 align-items: center;
@@ -535,42 +481,38 @@
                 border-width: 1px;
             }
 
-            #container07:not(:last-child) {
-                margin-bottom: 0rem !important;
-            }
-
-            #container07 > .wrapper > .inner {
+            #container01 > .wrapper > .inner {
                 --gutters: 2rem;
-                --padding-horizontal: 2rem;
-                --padding-vertical: 2rem;
+                --padding-horizontal: 0.5rem;
+                --padding-vertical: 0.5rem;
                 padding: var(--padding-vertical) var(--padding-horizontal);
             }
 
-            #container07 > .wrapper {
+            #container01 > .wrapper {
                 max-width: var(--width);
                 width: 100%;
             }
 
-            #container07.default > .wrapper > .inner > * {
+            #container01.default > .wrapper > .inner > * {
                 margin-bottom: var(--spacing);
                 margin-top: var(--spacing);
             }
 
-            #container07.default > .wrapper > .inner > *:first-child {
+            #container01.default > .wrapper > .inner > *:first-child {
                 margin-top: 0 !important;
             }
 
-            #container07.default > .wrapper > .inner > *:last-child {
+            #container01.default > .wrapper > .inner > *:last-child {
                 margin-bottom: 0 !important;
             }
 
-            #container07.columns > .wrapper > .inner {
+            #container01.columns > .wrapper > .inner {
                 flex-wrap: wrap;
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
             }
 
-            #container07.columns > .wrapper > .inner > * {
+            #container01.columns > .wrapper > .inner > * {
                 flex-grow: 0;
                 flex-shrink: 0;
                 max-width: 100%;
@@ -578,92 +520,84 @@
                 padding: 0 0 0 var(--gutters);
             }
 
-            #container07.columns > .wrapper > .inner > * > * {
+            #container01.columns > .wrapper > .inner > * > * {
                 margin-bottom: var(--spacing);
                 margin-top: var(--spacing);
             }
 
-            #container07.columns > .wrapper > .inner > * > *:first-child {
+            #container01.columns > .wrapper > .inner > * > *:first-child {
                 margin-top: 0 !important;
             }
 
-            #container07.columns > .wrapper > .inner > * > *:last-child {
+            #container01.columns > .wrapper > .inner > * > *:last-child {
                 margin-bottom: 0 !important;
             }
 
-            #container07.columns > .wrapper > .inner > *:first-child {
+            #container01.columns > .wrapper > .inner > *:first-child {
                 margin-left: calc(var(--gutters) * -1);
             }
 
-            #container07.default > .wrapper > .inner > .full {
+            #container01.default > .wrapper > .inner > .full {
                 margin-left: calc(var(--padding-horizontal) * -1);
                 max-width: none !important;
                 width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
             }
 
-            #container07.default > .wrapper > .inner > .full:first-child {
+            #container01.default > .wrapper > .inner > .full:first-child {
                 margin-top: calc(var(--padding-vertical) * -1) !important;
                 border-top-left-radius: inherit;
                 border-top-right-radius: inherit;
             }
 
-            #container07.default > .wrapper > .inner > .full:last-child {
+            #container01.default > .wrapper > .inner > .full:last-child {
                 margin-bottom: calc(var(--padding-vertical) * -1) !important;
                 border-bottom-left-radius: inherit;
                 border-bottom-right-radius: inherit;
             }
 
-            #container07.columns > .wrapper > .inner > div > .full {
+            #container01.columns > .wrapper > .inner > div > .full {
                 margin-left: calc(var(--gutters) * -0.5);
                 max-width: none !important;
                 width: calc(100% + var(--gutters) + 0.4725px);
             }
 
-            #container07.columns > .wrapper > .inner > div:first-child > .full {
+            #container01.columns > .wrapper > .inner > div:first-child > .full {
                 margin-left: calc(var(--padding-horizontal) * -1);
                 width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px);
             }
 
-            #container07.columns > .wrapper > .inner > div:last-child > .full {
+            #container01.columns > .wrapper > .inner > div:last-child > .full {
                 width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px);
             }
 
-            #container07.columns > .wrapper > .inner > div > .full:first-child {
+            #container01.columns > .wrapper > .inner > div > .full:first-child {
                 margin-top: calc(var(--padding-vertical) * -1) !important;
             }
 
-            #container07.columns > .wrapper > .inner > div > .full:last-child {
+            #container01.columns > .wrapper > .inner > div > .full:last-child {
                 margin-bottom: calc(var(--padding-vertical) * -1) !important;
             }
 
-            #container07.columns > .wrapper > .inner > div:first-child, #container07.columns > .wrapper > .inner > div:first-child > .full:first-child {
-                border-top-left-radius: inherit;
-            }
-
-            #container07.columns > .wrapper > .inner > div:last-child, #container07.columns > .wrapper > .inner > div:last-child > .full:first-child {
-                border-top-right-radius: inherit;
-            }
-
-            #container07.columns > .wrapper > .inner > .full {
+            #container01.columns > .wrapper > .inner > .full {
                 align-self: stretch;
             }
 
-            #container07.columns > .wrapper > .inner > .full:first-child {
+            #container01.columns > .wrapper > .inner > .full:first-child {
                 border-bottom-left-radius: inherit;
                 border-top-left-radius: inherit;
             }
 
-            #container07.columns > .wrapper > .inner > .full:last-child {
+            #container01.columns > .wrapper > .inner > .full:last-child {
                 border-bottom-right-radius: inherit;
                 border-top-right-radius: inherit;
             }
 
-            #container07.columns > .wrapper > .inner > .full > .full:first-child:last-child {
+            #container01.columns > .wrapper > .inner > .full > .full:first-child:last-child {
                 border-radius: inherit;
                 height: calc(100% + (var(--padding-vertical) * 2));
             }
 
-            #container07.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
+            #container01.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
                 border-radius: inherit;
                 height: 100%;
                 position: absolute;
@@ -684,101 +618,143 @@
                 -webkit-text-fill-color: currentcolor;
             }
 
-            #text12:not(:first-child) {
-                margin-top: 0.25rem !important;
-            }
-
-            #text12:not(:last-child) {
-                margin-bottom: 0.25rem !important;
-            }
-
-            #text12 {
-                text-align: left;
-                color: #FBF7F5;
-                font-family: 'Tiro Gurmukhi', serif;
-                padding-left: 0.25rem;
-                padding-right: 0;
-                font-size: 0.75em;
-                line-height: 1.5;
-                font-weight: 400;
-            }
-
-            #text12 a:hover {
-                color: #D20F39;
-            }
-
-            #text12 a {
-                text-decoration: underline;
-            }
-
-            #text12 span.p:nth-child(n + 2) {
-                margin-top: 1rem;
-            }
-
-            #text01:not(:first-child) {
-                margin-top: 0.25rem !important;
-            }
-
-            #text01:not(:last-child) {
-                margin-bottom: 0.25rem !important;
-            }
-
-            #text01 {
-                text-align: left;
-                color: #FBF7F5;
-                font-family: 'Tiro Gurmukhi', serif;
-                padding-left: 0.25rem;
-                padding-right: 0;
-                font-size: 0.75em;
-                line-height: 1.5;
-                font-weight: 400;
-            }
-
-            #text01 a:hover {
-                color: #04A5E5;
-            }
-
-            #text01 a {
-                text-decoration: underline;
-            }
-
-            #text01 span.p:nth-child(n + 2) {
-                margin-top: 1rem;
-            }
-
-            #text02:not(:first-child) {
-                margin-top: 0.25rem !important;
-            }
-
-            #text02:not(:last-child) {
-                margin-bottom: 0.25rem !important;
-            }
-
             #text02 {
                 text-align: left;
                 color: #FBF7F5;
-                font-family: 'Tiro Gurmukhi', serif;
+                font-family: 'Geist', sans-serif;
                 padding-left: 0.25rem;
                 padding-right: 0;
                 font-size: 0.75em;
                 line-height: 1.5;
                 font-weight: 400;
-            }
-
-            #text02 a:hover {
-                color: #04A5E5;
             }
 
             #text02 a {
                 text-decoration: underline;
             }
 
+            #text02 a:hover {
+                text-decoration: none;
+            }
+
             #text02 span.p:nth-child(n + 2) {
                 margin-top: 1rem;
             }
 
-            #header {
-                margin-bottom: 0.75rem !important;
+            #text03:not(:first-child) {
+                margin-top: 0rem !important;
+            }
+
+            #text03:not(:last-child) {
+                margin-bottom: 0rem !important;
+            }
+
+            #text03 {
+                text-align: left;
+                color: #FBF7F5;
+                font-family: 'Geist', sans-serif;
+                padding-left: 0.25rem;
+                padding-right: 0;
+                font-size: 0.75em;
+                line-height: 1.5;
+                font-weight: 400;
+            }
+
+            #text03 a {
+                text-decoration: underline;
+            }
+
+            #text03 a:hover {
+                text-decoration: none;
+            }
+
+            #text03 span.p:nth-child(n + 2) {
+                margin-top: 1rem;
+            }
+
+            #text04:not(:first-child) {
+                margin-top: 0rem !important;
+            }
+
+            #text04:not(:last-child) {
+                margin-bottom: 0rem !important;
+            }
+
+            #text04 {
+                text-align: left;
+                color: #FBF7F5;
+                font-family: 'Geist', sans-serif;
+                padding-left: 0.25rem;
+                padding-right: 0;
+                font-size: 0.75em;
+                line-height: 1.5;
+                font-weight: 400;
+            }
+
+            #text04 a {
+                text-decoration: underline;
+            }
+
+            #text04 a:hover {
+                text-decoration: none;
+            }
+
+            #text04 span.p:nth-child(n + 2) {
+                margin-top: 1rem;
+            }
+
+            #text01:not(:first-child) {
+                margin-top: 0rem !important;
+            }
+
+            #text01:not(:last-child) {
+                margin-bottom: 0rem !important;
+            }
+
+            #text01 {
+                text-align: left;
+                color: #FBF7F5;
+                font-family: 'Geist', sans-serif;
+                padding-left: 0.25rem;
+                padding-right: 0;
+                font-size: 0.75em;
+                line-height: 1.5;
+                font-weight: 400;
+            }
+
+            #text01 a {
+                text-decoration: underline;
+            }
+
+            #text01 a:hover {
+                text-decoration: none;
+            }
+
+            #text01 span.p:nth-child(n + 2) {
+                margin-top: 1rem;
+            }
+
+            #text05 {
+                text-align: center;
+                color: #FBF7F5;
+                font-family: 'Geist', sans-serif;
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
+                font-size: 0.75em;
+                line-height: 1.5;
+                font-weight: 400;
+            }
+
+            #text05 a {
+                text-decoration: underline;
+            }
+
+            #text05 a:hover {
+                text-decoration: none;
+            }
+
+            #text05 span.p:nth-child(n + 2) {
+                margin-top: 1rem;
             }
 
             .list {
@@ -829,12 +805,54 @@
                 margin-top: 0 !important;
             }
 
-            #list03 {
+            #list01 {
                 color: #FBF7F5;
-                font-family: 'Tiro Gurmukhi', serif;
+                font-family: 'Geist', sans-serif;
                 font-size: 0.75em;
                 line-height: 1.5;
                 font-weight: 400;
+                padding-left: calc(0.25rem * var(--indent-left));
+                padding-right: calc(0.25rem * var(--indent-right));
+            }
+
+            #list01 a:hover {
+                color: #D20F39;
+            }
+
+            #list01 a {
+                text-decoration: underline;
+            }
+
+            #list01 ul {
+                width: 100%;
+            }
+
+            #list01 ul li {
+                margin-top: 0.5rem;
+            }
+
+            #list01 ul li:after {
+                width: 0.5rem;
+            }
+
+            #list01 ul li:before {
+                background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2210%22%20fill%3D%22%23FBF7F5%22%20%2F%3E%3C%2Fsvg%3E');
+                background-position: left 60%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 1.125rem;
+                line-height: 1.125rem;
+                min-width: 0.52734375rem;
+            }
+
+            #list03 {
+                color: #FBF7F5;
+                font-family: 'Geist', sans-serif;
+                font-size: 0.75em;
+                line-height: 1.5;
+                font-weight: 400;
+                padding-left: calc(0.25rem * var(--indent-left));
+                padding-right: calc(0.25rem * var(--indent-right));
             }
 
             #list03 a:hover {
@@ -854,7 +872,7 @@
             }
 
             #list03 ul li:after {
-                width: 0.5rem;
+                width: 0.25rem;
             }
 
             #list03 ul li:before {
@@ -867,35 +885,37 @@
                 min-width: 0.52734375rem;
             }
 
-            #list04 {
+            #list02 {
                 color: #FBF7F5;
-                font-family: 'Tiro Gurmukhi', serif;
+                font-family: 'Geist', sans-serif;
                 font-size: 0.75em;
                 line-height: 1.5;
                 font-weight: 400;
+                padding-left: calc(0.25rem * var(--indent-left));
+                padding-right: calc(0.25rem * var(--indent-right));
             }
 
-            #list04 a:hover {
+            #list02 a:hover {
                 color: #D20F39;
             }
 
-            #list04 a {
+            #list02 a {
                 text-decoration: underline;
             }
 
-            #list04 ul {
+            #list02 ul {
                 width: 100%;
             }
 
-            #list04 ul li {
+            #list02 ul li {
                 margin-top: 0.5rem;
             }
 
-            #list04 ul li:after {
-                width: 0.5rem;
+            #list02 ul li:after {
+                width: 0.25rem;
             }
 
-            #list04 ul li:before {
+            #list02 ul li:before {
                 background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2210%22%20fill%3D%22%23FBF7F5%22%20%2F%3E%3C%2Fsvg%3E');
                 background-position: left 60%;
                 background-repeat: no-repeat;
@@ -903,6 +923,10 @@
                 height: 1.125rem;
                 line-height: 1.125rem;
                 min-width: 0.52734375rem;
+            }
+
+            #footer {
+                margin-top: 0rem !important;
             }
 
             .icc-credits {
@@ -1024,149 +1048,16 @@
                     --spacing: 0.75rem;
                 }
 
-                #container02:not(:last-child) {
-                    margin-bottom: 0rem !important;
-                }
-
                 #container02 > .wrapper > .inner {
+                    --gutters: 2rem;
                     --padding-horizontal: 0.5rem;
                     --padding-vertical: 0.5rem;
                 }
 
-                #container07:not(:last-child) {
-                    margin-bottom: 0rem !important;
-                }
-
-                #container07 > .wrapper > .inner {
+                #container01 > .wrapper > .inner {
                     --gutters: 2rem;
-                    --padding-horizontal: 2rem;
-                    --padding-vertical: 2rem;
-                }
-
-                #container07.columns > .wrapper > .inner {
-                    flex-direction: column !important;
-                    flex-wrap: nowrap !important;
-                }
-
-                #container07.columns > .wrapper > .inner > span {
-                    height: 0;
-                    margin-top: calc(var(--gutters) * -1);
-                    pointer-events: none;
-                    visibility: hidden;
-                }
-
-                #container07.columns > .wrapper > .inner > *:first-child {
-                    margin-left: 0 !important;
-                    padding-top: 0 !important;
-                }
-
-                #container07.columns > .wrapper > .inner > * {
-                    padding: calc(var(--gutters) * 0.5) 0 !important;
-                }
-
-                #container07.columns > .wrapper > .inner > *:last-child {
-                    padding-bottom: 0 !important;
-                }
-
-                #container07.columns > .wrapper > .inner > div > .full {
-                    margin-left: calc(var(--padding-horizontal) * -1);
-                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-                }
-
-                #container07.columns > .wrapper > .inner > div:first-of-type > .full {
-                    margin-left: calc(var(--padding-horizontal) * -1);
-                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-                }
-
-                #container07.columns > .wrapper > .inner > div:last-of-type > .full {
-                    margin-left: calc(var(--padding-horizontal) * -1);
-                    width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-                }
-
-                #container07.columns > .wrapper > .inner > div > .full:first-child {
-                    margin-top: calc(var(--gutters) * -0.5) !important;
-                }
-
-                #container07.columns > .wrapper > .inner > div > .full:last-child {
-                    margin-bottom: calc(var(--gutters) * -0.5) !important;
-                }
-
-                #container07.columns > .wrapper > .inner > div:first-of-type > .full:first-child {
-                    margin-top: calc(var(--padding-vertical) * -1) !important;
-                }
-
-                #container07.columns > .wrapper > .inner > div:last-of-type > .full:last-child {
-                    margin-bottom: calc(var(--padding-vertical) * -1) !important;
-                }
-
-                #container07.columns > .wrapper > .inner > div:first-of-type, #container07.columns > .wrapper > .inner > div:first-of-type > .full:first-child {
-                    border-top-left-radius: inherit;
-                    border-top-right-radius: inherit;
-                }
-
-                #container07.columns > .wrapper > .inner > div:last-of-type, #container07.columns > .wrapper > .inner > div:last-of-type > .full:last-child {
-                    border-bottom-left-radius: inherit;
-                    border-bottom-right-radius: inherit;
-                }
-
-                #container07.columns > .wrapper > .inner > div:first-of-type, #container07.columns > .wrapper > .inner > div:first-of-type > .full:last-child {
-                    border-bottom-left-radius: 0 !important;
-                }
-
-                #container07.columns > .wrapper > .inner > div:last-of-type, #container07.columns > .wrapper > .inner > div:last-of-type > .full:first-child {
-                    border-top-right-radius: 0 !important;
-                }
-
-                #container07.columns > .wrapper > .inner > .full > .full:first-child:last-child {
-                    height: auto;
-                }
-
-                #container07.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
-                    height: auto;
-                    position: relative;
-                    width: auto;
-                }
-
-                #text12:not(:first-child) {
-                    margin-top: 0.1875rem !important;
-                }
-
-                #text12:not(:last-child) {
-                    margin-bottom: 0.1875rem !important;
-                }
-
-                #text12 {
-                    padding-left: 0.1875rem;
-                    padding-right: 0;
-                    letter-spacing: 0rem;
-                    width: 100%;
-                    font-size: 0.625em;
-                    line-height: 1.5;
-                }
-
-                #text01:not(:first-child) {
-                    margin-top: 0.1875rem !important;
-                }
-
-                #text01:not(:last-child) {
-                    margin-bottom: 0.1875rem !important;
-                }
-
-                #text01 {
-                    padding-left: 0.1875rem;
-                    padding-right: 0;
-                    letter-spacing: 0rem;
-                    width: 100%;
-                    font-size: 0.75em;
-                    line-height: 1.5;
-                }
-
-                #text02:not(:first-child) {
-                    margin-top: 0.1875rem !important;
-                }
-
-                #text02:not(:last-child) {
-                    margin-bottom: 0.1875rem !important;
+                    --padding-horizontal: 0.5rem;
+                    --padding-vertical: 0.5rem;
                 }
 
                 #text02 {
@@ -1178,18 +1069,90 @@
                     line-height: 1.5;
                 }
 
-                #header {
-                    margin-bottom: 0.5625rem !important;
+                #text03:not(:first-child) {
+                    margin-top: 0rem !important;
+                }
+
+                #text03:not(:last-child) {
+                    margin-bottom: 0rem !important;
+                }
+
+                #text03 {
+                    padding-left: 0.1875rem;
+                    padding-right: 0;
+                    letter-spacing: 0rem;
+                    width: 100%;
+                    font-size: 0.75em;
+                    line-height: 1.5;
+                }
+
+                #text04:not(:first-child) {
+                    margin-top: 0rem !important;
+                }
+
+                #text04:not(:last-child) {
+                    margin-bottom: 0rem !important;
+                }
+
+                #text04 {
+                    padding-left: 0.1875rem;
+                    padding-right: 0;
+                    letter-spacing: 0rem;
+                    width: 100%;
+                    font-size: 0.75em;
+                    line-height: 1.5;
+                }
+
+                #text01:not(:first-child) {
+                    margin-top: 0rem !important;
+                }
+
+                #text01:not(:last-child) {
+                    margin-bottom: 0rem !important;
+                }
+
+                #text01 {
+                    padding-left: 0.1875rem;
+                    padding-right: 0;
+                    letter-spacing: 0rem;
+                    width: 100%;
+                    font-size: 0.75em;
+                    line-height: 1.5;
+                }
+
+                #text05 {
+                    padding-left: 0.1875rem;
+                    padding-right: 0.1875rem;
+                    letter-spacing: 0rem;
+                    width: 100%;
+                    font-size: 0.75em;
+                    line-height: 1.5;
+                }
+
+                #list01 {
+                    letter-spacing: 0rem;
+                    font-size: 0.75em;
+                    line-height: 1.5;
+                    padding-left: calc(0.1875rem * var(--indent-left));
+                    padding-right: calc(0.1875rem * var(--indent-right));
+                }
+
+                #list01 ul li:after {
+                    width: 0.5rem;
+                }
+
+                #list01 ul li:before {
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
                 }
 
                 #list03 {
                     letter-spacing: 0rem;
                     font-size: 0.75em;
                     line-height: 1.5;
-                }
-
-                #list03 ul li:after {
-                    width: 0.5rem;
+                    padding-left: calc(0.1875rem * var(--indent-left));
+                    padding-right: calc(0.1875rem * var(--indent-right));
                 }
 
                 #list03 ul li:before {
@@ -1198,20 +1161,22 @@
                     min-width: 0.52734375rem;
                 }
 
-                #list04 {
+                #list02 {
                     letter-spacing: 0rem;
                     font-size: 0.75em;
                     line-height: 1.5;
+                    padding-left: calc(0.1875rem * var(--indent-left));
+                    padding-right: calc(0.1875rem * var(--indent-right));
                 }
 
-                #list04 ul li:after {
-                    width: 0.5rem;
-                }
-
-                #list04 ul li:before {
+                #list02 ul li:before {
                     height: 1.125rem;
                     line-height: 1.125rem;
                     min-width: 0.52734375rem;
+                }
+
+                #footer {
+                    margin-top: 0rem !important;
                 }
             }
 
@@ -1229,34 +1194,53 @@
                 }
 
                 #container02 > .wrapper > .inner {
+                    --gutters: 1.5rem;
                     --padding-horizontal: 0.375rem;
                     --padding-vertical: 0.375rem;
                 }
 
-                #container07 > .wrapper > .inner {
+                #container01 > .wrapper > .inner {
                     --gutters: 1.5rem;
-                    --padding-horizontal: 1.5rem;
-                    --padding-vertical: 1.5rem;
-                }
-
-                #text12 {
-                    font-size: 0.625em;
-                }
-
-                #text01 {
-                    font-size: 0.75em;
+                    --padding-horizontal: 0.375rem;
+                    --padding-vertical: 0.375rem;
                 }
 
                 #text02 {
                     font-size: 0.75em;
                 }
 
-                #list03 {
+                #text03 {
                     font-size: 0.75em;
                 }
 
-                #list03 ul li:after {
+                #text04 {
+                    font-size: 0.75em;
+                }
+
+                #text01 {
+                    font-size: 0.75em;
+                }
+
+                #text05 {
+                    font-size: 0.75em;
+                }
+
+                #list01 {
+                    font-size: 0.75em;
+                }
+
+                #list01 ul li:after {
                     width: 0.5rem;
+                }
+
+                #list01 ul li:before {
+                    height: 1.125rem;
+                    line-height: 1.125rem;
+                    min-width: 0.52734375rem;
+                }
+
+                #list03 {
+                    font-size: 0.75em;
                 }
 
                 #list03 ul li:before {
@@ -1265,89 +1249,66 @@
                     min-width: 0.52734375rem;
                 }
 
-                #list04 {
+                #list02 {
                     font-size: 0.75em;
                 }
 
-                #list04 ul li:after {
-                    width: 0.5rem;
-                }
-
-                #list04 ul li:before {
+                #list02 ul li:before {
                     height: 1.125rem;
                     line-height: 1.125rem;
                     min-width: 0.52734375rem;
                 }
             }
         </style>
-        <noscript>
-            <style>
-                body {
-                    overflow: auto !important;
-                }
-
-                #main {
-                    opacity: 1.0 !important;
-                    transform: none !important;
-                    transition: none !important;
-                    filter: none !important;
-                }
-
-                #main > .inner > section {
-                    opacity: 1.0 !important;
-                    transform: none !important;
-                    transition: none !important;
-                    filter: none !important;
-                }
-            </style>
-        </noscript>
     </head>
-    <body class="is-loading">
+    <body>
         <div id="wrapper">
             <div id="main">
                 <div class="inner">
                     <div id="container02" class="container default">
                         <div class="wrapper">
                             <div class="inner">
-                                <p id="text12">Alistair Synklar</p>
+                                <p id="text02">
+                                    <strong>Alistair Synklar</strong>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div id="container07" class="container default">
+                    <div id="container01" class="container default">
                         <div class="wrapper">
                             <div class="inner">
-                                <p id="text01">
-                                    <strong>SOCIALS</strong>
+                                <p id="text03">
+                                    <strong>Social Media</strong>
+                                </p>
+                                <div id="list01" class="list">
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <a href="https://instagram.com/synklr/profilecard/">Instagram</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <a href="https://snapchat.com/add/synklar/">Snapchat</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <a href="https://reddit.com/user/synklr">Reddit</a>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p id="text04">
+                                    <strong>Contact Information</strong>
                                 </p>
                                 <div id="list03" class="list">
                                     <ul>
                                         <li>
                                             <p>
-                                                <a href="https://www.instagram.com/synklr/profilecard">Instagram</a>
+                                                <a href="https://t.me/synklar">Telegram</a>
                                             </p>
                                         </li>
-                                        <li>
-                                            <p>
-                                                <a href="https://www.snapchat.com/add/synklar">Snapchat</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                <a href="https://www.reddit.com/user/synklr">Reddit</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                <a href="https://synklar.carrd.co">Carrd</a>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p id="text02">
-                                    <strong>CONTACT</strong>
-                                </p>
-                                <div id="list04" class="list">
-                                    <ul>
                                         <li>
                                             <p>
                                                 <a href="mailto:synklar@protonmail.com">Personal Email</a>
@@ -1358,9 +1319,22 @@
                                                 <a href="mailto:alistair@synklar.com">Business Email</a>
                                             </p>
                                         </li>
+                                    </ul>
+                                </div>
+                                <p id="text01">
+                                    <strong>Miscellaneous</strong>
+                                </p>
+                                <div id="list02" class="list">
+                                    <ul>
                                         <li>
                                             <p>
-                                                <a href="https://t.me/Synklar">Telegram</a>
+                                                <a href="https://synklar.carrd.co">Carrd</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <a href="https://synklar.com/black-ink/">Black Ink</a>
+                                                [Under Construction]
                                             </p>
                                         </li>
                                     </ul>
@@ -1368,6 +1342,9 @@
                             </div>
                         </div>
                     </div>
+                    <p id="text05">
+                        <strong>❝Borrow from imagination what reality will not give you❞</strong>
+                    </p>
                 </div>
             </div>
         </div>
@@ -1660,28 +1637,6 @@
                         window.onerror = null;
                     }
                 };
-                var loaderTimeout = setTimeout(function() {
-                    $body.classList.add('with-loader');
-                }, 500);
-                var $loaderElement = document.createElement('div');
-                $loaderElement.id = 'loader';
-                $body.appendChild($loaderElement);
-                var loadHandler = function() {
-                    setTimeout(function() {
-                        clearTimeout(loaderTimeout);
-                        $body.classList.remove('is-loading');
-                        $body.classList.add('is-playing');
-                        setTimeout(function() {
-                            $body.classList.remove('with-loader');
-                            $body.classList.remove('is-playing');
-                            $body.classList.add('is-ready');
-                            setTimeout(function() {
-                                $body.removeChild($loaderElement);
-                            }, 1000);
-                        }, 1000);
-                    }, 100);
-                };
-                on('load', loadHandler);
                 loadElements(document.body);
                 var style, sheet, rule;
                 style = document.createElement('style');
